@@ -1,14 +1,18 @@
 React template features:
 
+### Run project
+
 1. yarn install
 2. yarn start
 
-React query
-React hook form
-Material UI
-Tailwind
-Sass
-ESlint
-Prettier
-Typescript
-Basic folder configuration
+### Libraries
+
+1. React query
+2. React hook form
+3. Material UI
+4. Tailwind
+5. Sass
+6. ESlint
+7. Prettier
+8. Typescript
+9. Basic folder configuration
