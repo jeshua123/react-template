@@ -1,6 +1,5 @@
-export const formatDecimalNumber = (number: number | undefined) => {
-  return number && number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.')
-}
+const locale = 'en'
+const options = { style: 'currency', currency: 'GBP', maximumFractionDigits: 2 }
 
 export const loadFile = (files: any) => {
   return new Promise((resolve) => {
@@ -10,4 +9,8 @@ export const loadFile = (files: any) => {
     })
     reader.readAsDataURL(files.item(0))
   })
+}
+
+export const formatNum = (num: number) => {
+  return Intl.NumberFormat(locale, options).format(num)
 }
