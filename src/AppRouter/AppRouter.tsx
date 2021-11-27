@@ -1,5 +1,13 @@
+import UiKitView from 'assets/UiKit/UiPage/UiView'
+import routes from 'constants/routes'
+import { Routes, Route } from 'react-router-dom'
+
 const AppRouter: React.FC = () => {
-  return <div className='m-20'>router</div>
+  return (
+    <Routes>
+      <Route path={routes.ui_kit} element={<UiKitView />} />
+    </Routes>
+  )
 }
 
 export default AppRouter

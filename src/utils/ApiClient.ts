@@ -50,8 +50,6 @@ function getServerUrl(mode: 'PROD' | 'DEV' | 'STAGING') {
   switch (mode) {
     case 'STAGING':
       return process.env.REACT_APP_BACKEND_SERVER_URL!
-    case 'DEV':
-      return process.env.REACT_APP_BACKEND_SERVER_URL!
     case 'PROD':
       return process.env.REACT_APP_BACKEND_SERVER_URL!
     default:
